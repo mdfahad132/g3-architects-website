@@ -160,6 +160,17 @@ main > section{
 .enjoy-card-des{
     margin: 0;
 }
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -96px;
+    margin-top: -150px;
+}
+#experience-years{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /* some facts style */
 .facts h3{
@@ -218,10 +229,21 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* footer section */
+footer{
+    border-radius: 8px;
+    text-align: center;
+    margin: 130px 80px;
+
+}
+.footer-des{
+    padding: 34px 410px;
+    color: rgba(66, 66, 66, 1);
+}
 
 /* responsive media query */
 @media screen and (max-width:576px){
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .enjoy{
         flex-direction: column;
     }
     .nav-links{
@@ -255,11 +277,44 @@ main > section{
         justify-items: center;
         gap: 40px;
     }
+    .future-architect img{
+        width: 100%;
+    }
+    .future-architect{
+        text-align: center;
+    }
+    #experience-badge{
+        margin-top:20px ;
+        margin-left: 0;
+        padding: 20px  30px;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    #experience-years{
+        font-size: 1rem;
+    }
+    footer{
+        display: none;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:1440px) {
-    .teams{
+    .teams, .enjoy{
         flex-direction: column;
+    }
+    .future-architect{
+        display: flex;
+        flex-direction: column;
+        margin: 0 200px;
+    }
+    .enjoy{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .enjoy-info{
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
     }
     .our-features{
         margin: 0 auto;
@@ -286,6 +341,22 @@ main > section{
     .facts-container{
         justify-items: center;
         gap: 30px;
+    }
+    #experience-badge{
+        margin-top:20px ;
+        margin-left: 0;
+        padding: 20px  50px;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    #experience-years{
+        font-size: 1rem;
+    }
+    .enjoy-info p{
+        max-width: 658px;
+    }
+    footer{
+        display: none;
     }
 
 }
